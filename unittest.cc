@@ -56,7 +56,13 @@ TEST(TestCaseTwo, TestingSomethingB)
 
 }
 
-TEST_F(MyTestClass_Test, Experiment)
+TEST_F(MyTestClass_Test, InitialValueIsZero)
 {
 	EXPECT_EQ(0, mtc1.get());
+}
+
+TEST_F(MyTestClass_Test, TestSetGet)
+{
+	mtc1.set(42);
+	EXPECT_EQ(42, mtc1.get());
 }
