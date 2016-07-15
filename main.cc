@@ -2,7 +2,7 @@
  * main.cpp
  *
  *  Created on: Jul 14, 2016
- *      Author: someone
+ *  Author: someone
  */
 
 #include <iostream>

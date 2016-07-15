@@ -12,7 +12,27 @@
 
 #include <gtest/gtest.h>
 
-MyTestClass mt;
+using namespace ::testing;
+
+class MyTestClass_Test : public Test
+{
+protected:
+	virtual void SetUp();
+	virtual void TearDown();
+
+	MyTestClass mtc1;
+	MyTestClass mtc2;
+};
+
+void MyTestClass_Test::SetUp()
+{
+	//do some init
+}
+
+void MyTestClass_Test::TearDown()
+{
+	//do some deinit
+}
 
 TEST(TestCaseOne, TestingSomethingA)
 {
@@ -34,4 +54,9 @@ TEST(TestCaseTwo, TestingSomethingA)
 TEST(TestCaseTwo, TestingSomethingB)
 {
 
+}
+
+TEST_F(MyTestClass_Test, Experiment)
+{
+	EXPECT_EQ(0, mtc1.get());
 }
