@@ -2,7 +2,7 @@
  * MyTestClass.cc
  *
  *  Created on: Jul 14, 2016
- *      Author: someone
+ *  Author: Orhan Mehmedov
  */
 
 
