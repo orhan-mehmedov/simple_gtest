@@ -48,7 +48,7 @@ TEST(TestCaseOne, TestingSomethingB)
 
 TEST(TestCaseTwo, TestingSomethingA)
 {
-	EXPECT_STREQ("ALABALA", "ALABALA") << "Is they equal?";
+	EXPECT_STREQ("ALABALA", "ALABALA") << "Are they equal?";
 }
 
 TEST(TestCaseTwo, TestingSomethingB)
